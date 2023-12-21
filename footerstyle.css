@@ -1,0 +1,40 @@
+.last-section-container {
+    display: grid;
+    height: 200px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 4fr, 0.5fr;
+    justify-content: space-around;
+}
+
+li {
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.col1 {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+
+}
+
+.footereasypg {
+    color: #2CA4B5;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: large;
+}
+
+.col2 {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+
+}
+
+.first-item {
+    color: black;
+    font-weight: 700;
+}

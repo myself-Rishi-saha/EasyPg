@@ -1,8 +1,7 @@
 .last-section-container {
     display: grid;
-    height: 200px;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 4fr, 0.5fr;
+    grid-template-rows: none;
     justify-content: space-around;
 }
 
@@ -32,6 +31,22 @@ li {
     align-items: start;
     flex-direction: column;
 
+}
+
+.footer-text {
+    grid-column: span 4;
+    display: flex;
+    color: black;
+    font-size: 12px;
+    font-weight: 300;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.Easyp-pv-ltd {
+    font-weight: 700;
+    margin-left: 5px;
 }
 
 .first-item {

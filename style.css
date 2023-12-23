@@ -18,7 +18,7 @@ header {
 
 .first-section {
     background: linear-gradient(to right, rgba(39, 216, 255, 0.48), rgba(255, 255, 255, 0.625));
-    height: 100vh;
+    height: 500px;
 }
 
 @media (min-width: 600px) {
@@ -76,10 +76,18 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 50vh;
     margin-top: 20px;
     margin-left: 40px;
-    font-size: 3rem;
+
+    /* font-size: 3rem; */
+    @media (min-width:800px) {
+        font-size: 3rem;
+    }
+
+    @media (max-width : 799px) {
+        font-size: 2rem;
+    }
+
     font-weight: bolder;
     color: black;
 }
@@ -141,7 +149,7 @@ input[type="submit"] {
 
 .about-section {
     background: linear-gradient(90deg, #CCC 0.03%, rgba(255, 255, 255, 0.00) 48.81%);
-    height: 100vh;
+    height: 500px;
 
 }
 
@@ -172,14 +180,15 @@ input[type="submit"] {
     flex-direction: column;
     align-items: center;
     gap: 15px;
-    margin: 40px;
+    margin-left: 40px;
 
-    @media (min-width:601px) {
+    @media (min-width:651px) {
         font-size: 21px;
     }
 
-    @media (max-width:600px) {
-        font-size: 16px;
+    @media (max-width:650px) {
+        margin-top: 25px;
+        font-size: 18px;
     }
 
     font-weight: 300;
@@ -207,5 +216,5 @@ input[type="submit"] {
 
 .about-image img {
     width: 50%;
-    object-fit: scale-down;
+    object-fit: contain;
 }

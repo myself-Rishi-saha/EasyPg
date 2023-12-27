@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp for User</title>
+    <link rel="stylesheet" href="signuppagestyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kalnia:wght@300&family=Montserrat&family=Oswald:wght@200&family=Whisper&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="Main-container">
+        <div class="form-container">
+            Sign Up <span style="font-size: small;">User</span>
+            <div class="left-container">
+                <div class="create-account-grid">
+                    <div class="CA">Create Account</div>
+                    <div class="first-name">
+                        <input type="first-name" id="first-name" placeholder="First Name">
+                    </div>
+                    <div class="last-name">
+                        <input type="last-name" id="last-name" placeholder="Last Name">
+                    </div>
+                    <div class="email">
+                        <input type="email" name="email" id="email" placeholder="example@email.com">
+                    </div>
+                    <div class="address">
+                        <input type="address" id="address" placeholder="Enter Your Address">
+                    </div>
+                    <div class="pass-container">
+                        <div class="pass">
+                            <input type="password" name="password" id="password">
+                            <img src="closeEye.png" alt="closeEye" id="eyeicon">
+                        </div>
+                    </div>
+
+                    <div class="pin">
+                        <input type="pin" name="pin" id="pin" placeholder="Pin Code">
+                    </div>
+                    <button class="create-account">Create Account</button>
+                    <button class="google-sign-up">
+                        <img src="googleIcon.png" alt="googleIcon">
+                        Signup with google
+                    </button>
+                </div>
+            </div>
+
+        </div>
+        <div class="right-container">
+            <div class="easy-pg">
+                Easy <span>Pg</span>
+            </div>
+            <div class="try">
+                <div class="ellipse">
+                    <img src="ellipse-2.png" alt="upper-ellipse">
+                </div>
+                <div class="mid-text">
+                    Find Your Nearest Mess
+                </div>
+            </div>
+
+            <div class="login-button">
+                <button>Log In</button>
+            </div>
+            <div class="bottom-ellipse">
+                <img src="bottom-ellipse.png" alt="bottom-ellipse">
+            </div>
+
+        </div>
+    </div>
+    <script>
+        let eyeicon = document.getElementById("eyeicon");
+        let passoword = document.getElementById("password");
+        let passwordContainer = document.getElementById("pass-container");
+        eyeicon.onclick = function () {
+            if (passoword.type == "password") {
+
+            }
+            else {
+                passoword.type = "password";
+            }
+        }
+        document.getElementById("first-name");
+    </script>
+</body>
+
+</html>

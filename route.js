@@ -3,7 +3,7 @@ var router=express.Router();
 
 router.get('/', (req,res)=>{
     // res.sendfile(path.join(__dirname,'index.html'))
-      res.render('index')
+      res.render('signup')
 });
 router.get('/loginUser', (req,res)=>{
    

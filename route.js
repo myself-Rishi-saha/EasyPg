@@ -16,5 +16,9 @@ router.get('/signup', (req,res)=>{
 
       res.render("signup")
 });
+router.get('/provider-seeker-page', (req,res)=>{
+
+      res.render("provider-seeker-page")
+});
 
 module.exports=router;

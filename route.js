@@ -12,9 +12,11 @@ router.get('/signupUser', (req,res)=>{
 
       res.render("signup")
 });
+
 router.get('/signupMessOwner', (req,res)=>{
 
       res.render("sign_up_for_owner")
+
 });
 
 module.exports=router;

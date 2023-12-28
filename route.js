@@ -8,17 +8,15 @@ router.get('/', (req,res)=>{
 router.get('/loginUser', (req,res)=>{
       res.render("loginUser")
 });
-
-
-   
-
-router.get('/signup', (req,res)=>{
+router.get('/signupUser', (req,res)=>{
 
       res.render("signup")
 });
-router.get('/provider-seeker-page', (req,res)=>{
 
-      res.render("provider-seeker-page")
+router.get('/signupMessOwner', (req,res)=>{
+
+      res.render("sign_up_for_owner")
+
 });
 
 module.exports=router;

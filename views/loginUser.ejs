@@ -20,28 +20,95 @@
                 <div class="parentforum">
                     <div class="mainforum">
                         <input class="emailText" type="text" placeholder="Email">
-                        <input  type="text" class="passwordText" placeholder="Password">
-                       <button class="loginSubmit" type="submit">Log in</button>
-                       <br>
-                     <div class="or">Or</div>
-                     <br>
-                     <div class="parentSignupGoogle"><div class="signupGoogle"><img class="googleimg" src="google.png" alt="" srcset=""><div class="signupwithgoogleText">Sign up with Google Account</div></div></div>
-
+                        <div class="password-container">
+                            <input type="password" id="password" class="passwordText" placeholder="Enter password">
+                            <div class="eye-icon" onclick="togglePassword()">
+                              <img id="eye" src="closeEye.png" alt="Eye Icon">
+                            </div>
+                          </div>
+                        <button class="loginSubmit" type="submit">Log in</button>
+                        <br>
+                        <div class="or">Or</div>
+                        <br>
+                        <div class="parentSignupGoogle">
+                            <div class="signupGoogle"><img class="googleimg" src="google.png" alt="" srcset="">
+                                <div class="signupwithgoogleText">Sign up with Google Account</div>
+                            </div>
+                        </div>
+                        <br>
+                       <div class="parentnotAccount"> <div class="notAccount">Don't have any EasyPg account?<a class="whoareyou" id="signupLink" href="#"> Sign Up</a> </div></div>
+                       <!-- <div class="popup" id="signupPopup">
+                        <div class="popup-content">
+                          <span class="close" onclick="closePopup()">&times;</span>
+                          <p>Choose an option:</p>
+                          <div onclick="selectUser()">User</div>
+                          <div onclick="selectMessOwner()">Mess Owner</div>
+                        </div>
+                      </div> -->
 
                     </div>
                 </div>
-            </form>
+        
+
+        </form>
 
 
-        </div>
-        <div class="findNearestMess">
-            <div class="col1"></div>
-            <div class="col2"></div>
-            <div class="col3"></div>
-           <img class="ellipse" src="Ellipse.png" alt="" srcset="">
-           <div class="FindyourNearestMess">Find your Nearest Mess</div>
-        </div>
     </div>
+    <div class="findNearestMess">
+        <div class="col1"></div>
+        <div class="col2"></div>
+        <div class="col3"></div>
+        <img class="ellipse" src="Ellipse.png" alt="" srcset="">
+        <div class="FindyourNearestMess">Find your Nearest Mess</div>
+    </div>
+    </div>
+
+    <script>
+        function togglePassword() {
+    var passwordField = document.getElementById("password");
+    var eyeIcon = document.getElementById("eye");
+
+    if (passwordField.type === "password") {
+      passwordField.type = "text";
+      eyeIcon.src = "openEye.png"; 
+      passwordField.type = "password";
+      eyeIcon.src = "closeEye.png"; // Replace with the path to your closed eye icon
+    }
+  }
+//   document.getElementById('signupLink').addEventListener('click', function() {
+//   var popup = document.getElementById('signupPopup');
+//   var con=document.getElementById('container');
+//   con.style.opacity=0.5;
+//   popup.style.display = 'block';
+//   setTimeout(function() {
+//     popup.style.opacity = 1;
+//   }, 10); 
+// });
+
+// function closePopup() {
+//   var popup = document.getElementById('signupPopup');
+//   var con=document.getElementById('container');
+//   con.style.opacity=1;
+//   popup.style.opacity = 0;
+//   setTimeout(function() {
+//     popup.style.display = 'none';
+//   }, 300); // Matching the transition duration
+// }
+
+// function selectUser() {
+//   alert('User selected');
+//   closePopup();
+// }
+
+// function selectMessOwner() {
+//   alert('Mess Owner selected');
+//   closePopup();
+// }
+
+
+
+    </script>
+
 
 </body>
 

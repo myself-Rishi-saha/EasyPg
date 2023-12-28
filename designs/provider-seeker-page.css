@@ -70,3 +70,12 @@ h4 {
     min-height: 400px;
     min-width: 200px;
 }
+.seekera{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 0.2px;
+}
+.p{
+    color: #2CA4B5;
+}

@@ -18,5 +18,10 @@ router.get('/signupMessOwner', (req,res)=>{
       res.render("sign_up_for_owner")
 
 });
+router.get('/provider', (req,res)=>{
+
+      res.render("provider-seeker-page")
+
+});
 
 module.exports=router;

@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@800&family=Montserrat:wght@400&family=Press+Start+2P&family=Urbanist:wght@600&family=Work+Sans:wght@800&display=swap');
 .last-section-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: none;
     justify-content: space-around;
+    font-family: Montserrat;
 }
 
 li {

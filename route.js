@@ -6,11 +6,14 @@ router.get('/', (req,res)=>{
       res.render('index')
 });
 router.get('/loginUser', (req,res)=>{
-   
       res.render("loginUser")
 });
+
 router.get('/signUpUser', (req,res)=>{
    
+
+router.get('/signup', (req,res)=>{
+
       res.render("signup")
 });
 

@@ -139,6 +139,7 @@ input[type="pin"] {
     width: 80%;
     border-radius: 44px;
     border: 2px solid #2CA4B5;
+    outline: black;
     background: rgba(17, 110, 123, 0.10);
 }
 
@@ -156,7 +157,18 @@ input[type="pin"] {
     cursor: pointer;
 }
 
-input[type="password"] {
+.pass input {
+    border-radius: 44px 0 0 44px;
+    outline: none;
+    border: none;
+    height: 40px;
+    width: 80%;
+    background: none;
+    text-indent: 10px;
+    font-size: medium;
+}
+
+input[type="text"] {
     border-radius: 44px 0 0 44px;
     outline: none;
     border: none;

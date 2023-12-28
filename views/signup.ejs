@@ -34,7 +34,7 @@
                     </div>
                     <div class="pass-container">
                         <div class="pass">
-                            <input type="password" name="password" id="password">
+                            <input type="password" name="password" id="password" placeholder="password">
                             <img src="closeEye.png" alt="closeEye" id="eyeicon">
                         </div>
                     </div>
@@ -79,13 +79,15 @@
         let passwordContainer = document.getElementById("pass-container");
         eyeicon.onclick = function () {
             if (passoword.type == "password") {
-
+                passoword.type = "text";
+                eyeicon.src = "openEye.png";
             }
             else {
                 passoword.type = "password";
+                eyeicon.src = "closeEye.png";
             }
         }
-        document.getElementById("first-name");
+        passwordContainer.onclick = passwordContainer.style.border("2px solid #2CA4B5");
     </script>
 </body>
 

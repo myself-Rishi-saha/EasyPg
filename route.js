@@ -9,7 +9,7 @@ router.get('/loginUser', (req,res)=>{
       res.render("loginUser")
 });
 
-router.get('/signUpUser', (req,res)=>{
+
    
 
 router.get('/signup', (req,res)=>{

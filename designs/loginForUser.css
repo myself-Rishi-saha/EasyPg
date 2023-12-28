@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@800&family=Montserrat:wght@500&family=Press+Start+2P&family=Urbanist:wght@500&family=Work+Sans:wght@800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@800&family=Montserrat:wght@300&family=Press+Start+2P&family=Urbanist:wght@200&family=Work+Sans:wght@800&display=swap');
 /* @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@700&family=Montserrat:wght@300;800&family=Press+Start+2P&family=Urbanist:wght@200&family=Work+Sans:wght@200&display=swap');
 */
 html, 
@@ -92,7 +93,7 @@ body {
     /* height: 23em;
     width: 42rem; */
     /* background-color: red; */
-    /* margin-top: 35px; */
+    margin-top: 35px;
     flex-direction: column;
 
 }
@@ -103,11 +104,10 @@ body {
     width: 30rem;
     border-radius: 44px;
     flex-shrink: 0;
-    /* border: 3px solid #2CA4B5; */
-    background: rgb(149 220 229 / 41%);
+
+    border: 3px solid #2CA4B5;
+    background: rgba(194, 248, 255, 0.41);
     padding-left: 27px;
-    border: none;
-    outline-color: #2CA4B5;
 
 }
 
@@ -122,25 +122,11 @@ body {
     border-radius: 44px;
     flex-shrink: 0;
 
-    border: none;
+    border: 3px solid #2CA4B5;
     background: rgba(7, 75, 84, 0.10);
     padding-left: 27px;
-    outline-color:#2CA4B5 ;
 }
-.password-container {
-    position: relative;
-  }
 
-  .eye-icon {
-    position: absolute;
-    right: 23px;
-    top: 75%;
-    transform: translateY(-50%);
-    cursor: pointer;
-  }
-#eye{
-    height: 14px;
-}
 .loginSubmit {
     color: #F4F4F4;
 
@@ -192,11 +178,11 @@ body {
 .signupwithgoogleText{
     color: rgba(0, 0, 0, 0.54);
 font-family: Montserrat;
-font-size: 16px;
+font-size: 17px;
 font-style: normal;
-/* font-weight: 600; */
+font-weight: 600;
 line-height: normal;
-margin-left: 45px;
+margin-left: 30px;
 }
 .findNearestMess{
     display: flex;
@@ -208,12 +194,12 @@ margin-left: 45px;
     border-radius: 38px;
     background: rgba(9, 225, 255, 0.41);
     /* margin-top: 249px; */
-    margin-left: 40px;
+    margin-left: 60px;
     /* position: relative; */
     bottom: 0px;
     position: absolute;
     bottom: 0px;
-    }
+}
 .col2{
     width: 55px;
     height: 315px;
@@ -223,7 +209,7 @@ margin-left: 45px;
     /* margin-top: 350px; */
     margin-left: 66px;
     position: absolute;
-    margin-left: 155px;
+    margin-left: 160px;
     bottom: 0px;
 }
  .col3{
@@ -234,16 +220,12 @@ margin-left: 45px;
     background: rgba(44, 164, 181, 0.23);
     position: absolute;
     bottom: 0px;
-    /* margin-left: 430px; */
-    /* margin-right: -24em; */
-    right: 23px;
+    margin-left: 430px;
 } 
 .ellipse{
-    height: 32%;
+    height: 39%;
     margin-top: 10px;
-    /* margin-left: 140px; */
-    position: absolute;
-    right: 67px;
+    margin-left: 140px;
 }
 .FindyourNearestMess{
     width: 252px;
@@ -260,42 +242,7 @@ margin-left: 45px;
     -webkit-text-fill-color: transparent;
     position: absolute;
     margin-left: 140px;
-    /* margin-top: 145px; */
-    /* margin-bottom: 117px; */
-    /* right: 53px; */
-    top: 139px;
+    margin-top: 145px;
 }    
-.notAccount{
-   
-        color: rgba(0, 0, 0, 0.54);
-        font-family: Montserrat;
-        font-size: 16px;
-        font-style: normal;
-        /* font-weight: 600; */
-        line-height: normal;
-       
-    
-}
-.select{
-    position: absolute;
-    height: 97px;
-    width: 200px;
-    display: flex;
-    justify-content:  space-evenly;
-    background-color: red;
-    flex-direction: column;
-    align-items: center;
-    font-size: 16px;
-    font-weight: 800;
-    margin-top: -18px;
-    visibility: hidden;
-    z-index: 20;
-    
 
-}
-.userme{
-    margin-left: -62px;
-}
-#sign_up{
-cursor: pointer;
-}
+

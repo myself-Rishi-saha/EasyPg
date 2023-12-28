@@ -21,5 +21,6 @@ app.set('views',path.join(__dirname,'./views'));
 
 //port listen
 app.listen(port,()=>{
-    console.log(`app is listening on port ${port}`)
+    console.log(`app is listening on port ${port}`);
+    console.log(`http://localhost:${port}`);
 })

@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@800&family=Montserrat:wght@300&family=Press+Start+2P&family=Urbanist:wght@200&family=Work+Sans:wght@800&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@700&family=Montserrat:wght@300;800&family=Press+Start+2P&family=Urbanist:wght@200&family=Work+Sans:wght@200&display=swap');
+*/
+html, 
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Montserrat;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+
+}
+
+.content {
+    height: 100%;
+    width: 65%;
+    background: linear-gradient(123deg, rgba(9, 225, 255, 0.41) 0%, rgba(217, 217, 217, 0.00) 72.32%);
+}
+
+.loginTitle {
+    color: #2CA4B5;
+
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    width: 105px;
+    height: 39px;
+    margin-top: 30px;
+    margin-left: 37px;
+
+
+}
+
+.findNearestMess {
+    height: 100%;
+    width: 35%;
+    background: rgba(44, 164, 181, 0.23);
+}
+
+.welcome {
+    width: 212px;
+    height: 78px;
+    margin-top: 35px;
+    margin-left: 37px;
+
+
+
+
+}
+
+.upper {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.lower1 {
+    color: #2CA4B5;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.lower2 {
+    color: #1B2093;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.parentforum {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+
+}
+
+.mainforum {
+    display: flex;
+    /* height: 23em;
+    width: 42rem; */
+    /* background-color: red; */
+    margin-top: 35px;
+    flex-direction: column;
+
+}
+
+.emailText {
+    margin-top: 30px;
+    height: 45px;
+    width: 30rem;
+    border-radius: 44px;
+    flex-shrink: 0;
+
+    border: 3px solid #2CA4B5;
+    background: rgba(194, 248, 255, 0.41);
+    padding-left: 27px;
+
+}
+
+.formC {
+    height: calc(100% - 300px);
+}
+
+.passwordText {
+    margin-top: 35px;
+    height: 45px;
+    width: 30rem;
+    border-radius: 44px;
+    flex-shrink: 0;
+
+    border: 3px solid #2CA4B5;
+    background: rgba(7, 75, 84, 0.10);
+    padding-left: 27px;
+}
+
+.loginSubmit {
+    color: #F4F4F4;
+
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 35px;
+    height: 45px;
+    width: 32rem;
+    border: 3px solid #2CA4B5;
+    border-radius: 44px;
+    flex-shrink: 0;
+    background: #2CA4B5;
+}
+
+.or {
+    color: #000;
+
+    font-family: Montserrat;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+}
+
+.signupGoogle {
+    display: flex;
+    
+    align-items: center;
+    width: 23rem;
+    height: 45px;
+    flex-shrink: 0;
+    border-radius: 44px;
+    background: rgba(17, 110, 123, 0.10);
+}
+
+.parentSignupGoogle {
+    display: flex;
+    justify-content: center;
+
+}
+.googleimg{
+    height:55%;
+    margin-left: 27px;
+}
+.signupwithgoogleText{
+    color: rgba(0, 0, 0, 0.54);
+font-family: Montserrat;
+font-size: 17px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+margin-left: 30px;
+}
+.findNearestMess{
+    display: flex;
+}
+.col1{
+    width: 55px;
+    height: 410px;
+    flex-shrink: 0;
+    border-radius: 38px;
+    background: rgba(9, 225, 255, 0.41);
+    /* margin-top: 249px; */
+    margin-left: 60px;
+    /* position: relative; */
+    bottom: 0px;
+    position: absolute;
+    bottom: 0px;
+}
+.col2{
+    width: 55px;
+    height: 315px;
+    flex-shrink: 0;
+    border-radius: 38px;
+    background: rgba(16, 87, 96, 0.27);
+    /* margin-top: 350px; */
+    margin-left: 66px;
+    position: absolute;
+    margin-left: 160px;
+    bottom: 0px;
+}
+ .col3{
+    width: 55px;
+    height: 537px;
+    flex-shrink: 0;
+    border-radius: 38px;
+    background: rgba(44, 164, 181, 0.23);
+    position: absolute;
+    bottom: 0px;
+    margin-left: 430px;
+} 
+.ellipse{
+    height: 39%;
+    margin-top: 10px;
+    margin-left: 140px;
+}
+.FindyourNearestMess{
+    width: 252px;
+    height: 137px;
+    flex-shrink: 0;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    background: linear-gradient(121deg, #2CA4B5 2.49%, #006D7B 59.71%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    margin-left: 140px;
+    margin-top: 145px;
+}    

@@ -22,23 +22,24 @@ body {
     padding-top: 15%;
 }
 
-h3 {
+h2 {
     color: #2CA4B5;
     margin-left: 20%;
 }
 
-h4 {
+h3 {
     margin-left: 20%;
     color: #000000;
 }
 
 #seeker {
+    margin-top: 10px;
     margin-left: 20%;
     border-radius: 44px;
     background: #2CA4B5;
     border: none;
     height: 40px;
-    width: 160px;
+    width: 180px;
     text-align: center;
     font-size: medium;
     color: White;
@@ -52,7 +53,7 @@ h4 {
     background: rgba(44, 164, 181, 0.00);
     border: 3px solid #2CA4B5;
     height: 40px;
-    width: 160px;
+    width: 180px;
     text-align: center;
     font-size: medium;
     color: #2CA4B5;
@@ -66,16 +67,18 @@ h4 {
 
 .right-container img {
     height: 100%;
-    width: 70%;
+    width: 90%;
     min-height: 400px;
     min-width: 200px;
 }
-.seekera{
+
+.seekera {
     text-decoration: none;
     color: white;
-    font-size: 18px;
+    font-size: 20px;
     letter-spacing: 0.2px;
 }
-.p{
+
+.p {
     color: #2CA4B5;
 }

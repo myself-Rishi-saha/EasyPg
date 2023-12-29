@@ -4,6 +4,9 @@
     font-family: Montserrat;
 }
 
+.formbody{
+    padding: 50px 140px; display: flex;
+}
 .uppernav {
     height: 60px;
     display: grid;
@@ -54,7 +57,8 @@
 }
 
 .inputbox input {
-    outline: none;
+    background: rgba(17, 110, 123, 0.10);
+    /* outline: none; */
     border-radius: 44px;
     background: transparent;
     height: 100%;
@@ -63,10 +67,11 @@
     padding-left: 30px;
     color: #000;
     font-family: Montserrat;
-    font-size: 20px;
+    font-size: medium;
     font-style: normal;
-    font-weight: 600;
+    /* font-weight: 600; */
     line-height: normal;
+    outline-color: #2CA4B5;
 }
 
 .rightform {
@@ -86,7 +91,7 @@
     color: #000;
 
     font-family: Montserrat;
-    font-size: 24px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -96,12 +101,13 @@
 .checkfacilitytxt {
     color: #2CA4B5;
     font-family: Montserrat;
-    font-size: 24px;
+    font-size: larger;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
     margin: 9px;
     padding: 8px;
+    border-radius: 44px;background: rgba(7, 75, 84, 0.10);
 }
 .checkboxes div{
     display: flex;
@@ -118,9 +124,9 @@
 .checkboxtxt{
     color: #000;
 font-family: Montserrat;
-font-size: 24px;
+font-size: larger;
 font-style: normal;
-font-weight: 600;
+font-weight: 200;
 margin: 15px;
 line-height: normal;
 }
@@ -128,6 +134,9 @@ line-height: normal;
     width: 30px;
     height: 30px;
     margin: 15px;
+}
+.Ellipse3{
+    width: 232px; height: 218px; background: rgba(6.64, 74.65, 83.92, 0.10); border-radius: 9999px
 }
 
 /* Remove default checkbox */
@@ -230,13 +239,13 @@ line-height: normal;
 text-align: center;
 }
 .uploadphotowarning{
-    color: #000;
-font-family: Montserrat;
-font-size: 16px;
-font-style: normal;
-font-weight: 300;
-line-height: normal;
-text-align: center;
+    color: #534242;
+    font-family: Montserrat;
+    font-size: small;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-align: center;
 }
 .termstxt{
     color: #000;

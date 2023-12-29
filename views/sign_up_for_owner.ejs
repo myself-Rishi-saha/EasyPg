@@ -9,7 +9,7 @@
         href="https://fonts.googleapis.com/css2?family=Kalnia:wght@300&family=Montserrat&family=Oswald:wght@200&family=Whisper&display=swap"
         rel="stylesheet">
 </head>
-<body style="background: linear-gradient(123deg, rgba(9, 225, 255, 0.41) 0%, rgba(217, 217, 217, 0.00) 72.32%); height: auto;">
+<body style="background: linear-gradient(123deg, rgba(9, 225, 255, 0.41) 0%, rgba(217, 217, 217, 0.00) 72.32%); height: 100%;">
 
 
     <div class="uppernav">
@@ -31,21 +31,26 @@
 
 
             <div class="leftform" style="width: 60%;">
-            <div class="formheader">creat a Account</div>
+            <div class="formheader">create a Account</div>
             <div class="inputboxes" style="display: grid;">
                <div class="inputbox" style="grid-row: 1;"><input type="text" placeholder="First Name"></div>
                <div class="inputbox" style="grid-row: 1;"><input type="text" placeholder="Last Name"></div>
                <div class="inputbox" style="grid-column: 1 / span 2; ;grid-row: 2;"><input type="text" placeholder="Email Address"></div>
                <div class="inputbox" style="grid-column: 1 / span 2; ;grid-row: 3;"><input type="text" placeholder="Address"></div>
-               <div class="inputbox" style="grid-row: 4;"><input type="text" placeholder="Password"></div>
-               <div class="inputbox" style="grid-row: 4;"><input type="text" placeholder="Pincode"></div>
-               <div class="inputbox"  style="grid-column: 1 / span 2;;grid-row: 5;"><input type="text" placeholder="Mobile No."></div>
+               <div class="inputbox" style="grid-row: 5;" >
+                <input type="password" name="password" id="password" placeholder="password">
+                <img src="closeEye.png" alt="closeEye" id="eyeicon">
+                </div>
+               <div class="inputbox" style="grid-row: 5;"><input type="text" placeholder="Pincode"></div>
+               <div class="inputbox"  style="grid-column: 1 / span 2;;grid-row:4 ;"><input type="text" placeholder="Mobile No."></div>
             </div>
             </div>
 
             <div class="rightform" style="width: 40%;">
                 <div class="Ellipse3" style="">
-                <img src="upload 2.png" alt="" srcset="" style="cursor: pointer;">
+                 <input type="file" src="" alt="" style="display: none;" id="fileupload">
+                 <label for="fileupload"><img src="upload 2.png" alt="" srcset="" style="cursor: pointer;"></label>
+                 <!-- <img src="upload 2.png" alt="" srcset="" style="cursor: pointer;"> -->
                 </div>
                 <div class="uploadtxt">Uplode Your Profile  Photo</div>
             </div> 
@@ -53,7 +58,7 @@
     </div>
 
     <div class="downform" style="padding: 0px 140px; display: grid;">
-        <div style="display: flex;"><div class="checkfacilitytxt" style="">Chek your Provide Fecility</div></div>
+        <div style="display: flex;"><div class="checkfacilitytxt" style="">Check your Provide Fecility</div></div>
         <div class="checkboxes" style="width: 100%; display: grid;  grid-template-columns: 1fr 1fr 1fr; ">
 
         <div >
@@ -116,11 +121,27 @@
     </div>
 
     <div class="terms" style="display: flex; justify-content: center;" >
-        <button class="creataccountbtn" type="submit" style="cursor: pointer;">Crate a Account</button>
+        <button class="creataccountbtn" type="submit" style="cursor: pointer;">Create a Account</button>
     </div>
     </div>
 
 </form>
+<script>
+    let eyeicon = document.getElementById("eyeicon");
+    let passoword = document.getElementById("password");
+    let passwordContainer = document.getElementById("pass-container");
+    eyeicon.onclick = function () {
+        if (passoword.type == "password") {
+            passoword.type = "text";
+            eyeicon.src = "openEye.png";
+        }
+        else {
+            passoword.type = "password";
+            eyeicon.src = "closeEye.png";
+        }
+    }
+    passwordContainer.onclick = passwordContainer.style.border("2px solid #2CA4B5");
+</script>
 
 </body>
 </html>

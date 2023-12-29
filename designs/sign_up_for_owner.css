@@ -47,20 +47,21 @@
 
 .inputbox {
     border-radius: 44px;
-    background: rgba(17, 110, 123, 0.10);
+    /* background: rgba(17, 110, 123, 0.10); */
     /* width: 687px; */
     height: 45px;
     flex-shrink: 0;
     margin-top: 30px;
     display: flex;
     margin-right: 3px;
+    align-items: center;
 }
 
 .inputbox input {
     background: rgba(17, 110, 123, 0.10);
     /* outline: none; */
     border-radius: 44px;
-    background: transparent;
+    /* background: transparent; */
     height: 100%;
     width: 100%;
     border: none;
@@ -267,4 +268,19 @@ line-height: normal;
 width: 300px;
 height: 80px;
 margin: 60px;
+}
+
+#eyeicon{
+    height: 20px;
+    width: 20px;
+    object-fit: contain;
+    cursor: pointer;
+    /* height: 15px;
+    position: absolute;
+    margin-top: -30px;
+    /* margin-bottom: 19px; */
+    /* margin-left: 28.6rem;
+    margin-right: -2px;  */
+    position: relative;
+  right: 28px;
 }

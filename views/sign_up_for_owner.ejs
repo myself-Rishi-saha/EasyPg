@@ -9,7 +9,7 @@
         href="https://fonts.googleapis.com/css2?family=Kalnia:wght@300&family=Montserrat&family=Oswald:wght@200&family=Whisper&display=swap"
         rel="stylesheet">
 </head>
-<body style="background: linear-gradient(123deg, rgba(9, 225, 255, 0.41) 0%, rgba(217, 217, 217, 0.00) 72.32%); height: 100%;">
+<body style="background: linear-gradient(123deg, rgba(9, 225, 255, 0.41) 0%, rgba(217, 217, 217, 0.00) 72.32%); height: 100%; width: 100%;">
 
 
     <div class="uppernav">
@@ -25,7 +25,7 @@
     </div>
     </div>
 
-    <form action="">
+    <form action="" method="">
     <div class="formbody" >
        
 
@@ -33,23 +33,24 @@
             <div class="leftform" style="width: 60%;">
             <div class="formheader">create a Account</div>
             <div class="inputboxes" style="display: grid;">
-               <div class="inputbox" style="grid-row: 1;"><input type="text" placeholder="First Name"></div>
-               <div class="inputbox" style="grid-row: 1;"><input type="text" placeholder="Last Name"></div>
-               <div class="inputbox" style="grid-column: 1 / span 2; ;grid-row: 2;"><input type="text" placeholder="Email Address"></div>
-               <div class="inputbox" style="grid-column: 1 / span 2; ;grid-row: 3;"><input type="text" placeholder="Address"></div>
+               <div class="inputbox" style="grid-row: 1;"><input type="text" placeholder="First Name" name="First Name" id="FirstName"></div>
+               <div class="inputbox" style="grid-row: 1;"><input type="text" placeholder="Last Name"  name="Last Name" id="LastName"></div>
+               <div class="inputbox" style="grid-column: 1 / span 2; ;grid-row: 2;"><input type="text" placeholder="Email Address" name="Email" id="Email"></div>
+               <div class="inputbox" style="grid-column: 1 / span 2; ;grid-row: 3;"><input type="text" placeholder="Address"  name="Address" id="Address"></div>
                <div class="inputbox" style="grid-row: 5;" >
-                <input type="password" name="password" id="password" placeholder="password">
+                <input type="password" name="password" id="password" placeholder="password" id="Password">
                 <img src="closeEye.png" alt="closeEye" id="eyeicon">
                 </div>
-               <div class="inputbox" style="grid-row: 5;"><input type="text" placeholder="Pincode"></div>
-               <div class="inputbox"  style="grid-column: 1 / span 2;;grid-row:4 ;"><input type="text" placeholder="Mobile No."></div>
+               <div class="inputbox" style="grid-row: 5;" ><input type="text" placeholder="Pincode" name="Pincode" id="Pincode"></div>
+               <div class="inputbox"  style="grid-column: 1 / span 2;;grid-row:4 ;"><input type="text" placeholder="Mobile No."  name="Mobile No." id="MobileNo"></div>
             </div>
             </div>
 
             <div class="rightform" style="width: 40%;">
-                <div class="Ellipse3" style="">
-                 <input type="file" src="" alt="" style="display: none;" id="fileupload">
-                 <label for="fileupload"><img src="upload 2.png" alt="" srcset="" style="cursor: pointer;"></label>
+                <div class="Ellipse3" id="">
+                    <input type="file" accept="image/*" name="image" id="file" onchange="loadFile(event)" style="display: none;">
+    <label for="file"><img src="upload 2.png" alt="" style="cursor: pointer;"></label>
+    <img id="output" class="Ellipse3" style="z-index: -1; position: absolute; display: none;">
                  <!-- <img src="upload 2.png" alt="" srcset="" style="cursor: pointer;"> -->
                 </div>
                 <div class="uploadtxt">Uplode Your Profile  Photo</div>
@@ -96,17 +97,26 @@
         </div>
     </div>
 
-    <div class="inputbox" style="width: 30%;"><input type="text" placeholder="Mess Name"></div>
-    <div class="inputbox" style="height: 90px;"><input type="text" placeholder="About Your Mess"></div>
-    <div style="display: flex;"><div class="inputbox" style="width: 50%;"><input type="text" placeholder="Using Map for Your Mess , Tap a Location Button">
+    <div class="inputbox" style="width: 30%;"><input type="text" placeholder="Mess Name" id="MessName" name="MessName"></div>
+    <div class="inputbox" style="height: 90px;"><input type="text" placeholder="About Your Mess" name="AboutMess" id="AboutMess"></div>
+    <div style="display: flex;"><div class="inputbox" style="width: 50%;"><input type="text" placeholder="Using Map for Your Mess , Tap a Location Button" name="Location" id="Location">
     </div>
     <img src="map-marker 1.png" alt="" srcset="" style="height: 30px; width: 30px; margin: 35px;">
     </div>
 
-    <div style="display: flex; justify-content: center;">
+    <div style="display: flex; justify-content: center; width: 90vw; ">
         <div class="uploadphoto" style="width: 80%;" >
-        <div style="display: flex; justify-content: center; flex-direction: column;">
-             <div style="display: flex; justify-content: center;"><img src="/upload 1.png" alt="" style="cursor: pointer;"></div>
+        <div class="upload__box" style="display: flex; justify-content: center; flex-direction: column;">
+             <div class="upload__btn-box" style="display: flex; justify-content: center; align-items: center; white-space: nowrap; width: 100%; overflow: auto;">
+                <div class="upload__img-wrap" style="display: inline-block;"></div>
+                <!-- <input type="file" name="" id="messphotoupload" style="display: none;" onchange="loadimages(event)" onclick="myfunction()"> -->
+                <div class="img-bg1">
+                <label class="madarchod" for="upload__inputfile" class="upload__btn"><img src="upload 1.png" alt="" style="cursor: pointer;">
+                    <input type="file" multiple="" data-max_length="20" class="upload__inputfile" id="upload__inputfile" style="display: none;"></label>  
+                </div>
+
+                
+            </div>
             <div class="uploadmesstxt">Uplode Your Room Photo</div>
             <div class="uploadphotowarning">Maximum 1.5 MB Ratio Photo Support</div>
         </div>
@@ -114,34 +124,32 @@
     </div>
 
     <div class="terms" style="display: flex; justify-content: center;" >
-        <input type="checkbox" id="test9" />
+        <input type="checkbox" id="test9" disabled>
         <label for="test9"></label>
         <div class="termstxt">Check all </div><div class="termstxt" style="color:  #2CA4B5;">Trems & Condition </div><div class="termstxt">and Privacy</div>
         <div class="termstxt" style="color:  #2CA4B5;">Policy</div>
     </div>
 
     <div class="terms" style="display: flex; justify-content: center;" >
-        <button class="creataccountbtn" type="submit" style="cursor: pointer;">Create a Account</button>
+        <button class="creataccountbtn" type="submit" style="cursor: pointer;" disabled>Create a Account</button>
     </div>
     </div>
 
 </form>
 <script>
-    let eyeicon = document.getElementById("eyeicon");
-    let passoword = document.getElementById("password");
-    let passwordContainer = document.getElementById("pass-container");
-    eyeicon.onclick = function () {
-        if (passoword.type == "password") {
-            passoword.type = "text";
-            eyeicon.src = "openEye.png";
-        }
-        else {
-            passoword.type = "password";
-            eyeicon.src = "closeEye.png";
-        }
-    }
-    passwordContainer.onclick = passwordContainer.style.border("2px solid #2CA4B5");
+        var loadFile=function(event){
+        var image = document.getElementById("output");
+        var imageUrl = URL.createObjectURL(event.target.files[0]);
+        console.log("Image URL:", imageUrl);
+        image.src = URL.createObjectURL(event.target.files[0]);
+        image.style.display="block"
+    };
+
 </script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="sign_up_for_owner.js"></script>
+
+
 
 </body>
 </html>

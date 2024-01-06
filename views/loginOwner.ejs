@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Log in owner</title>
+  <link rel="stylesheet" href="util.css">
+  <link rel="stylesheet" href="loginForMessOwner.css">
+</head>
+
+<body>
+  <div class="parent-to-all">
+    <div class="col0"></div>
+    <div class="col1">
+      <div class="parentleft">
+        <div class="title">Log in</div>
+        <div class="business"><span class="business-text">Grow your Business</span>
+          <span class="parent-svg"><svg class="big" xmlns="http://www.w3.org/2000/svg" width="36" height="51"
+              viewBox="0 0 36 51" fill="none">
+              <path d="M35.6606 0.254675L15.2146 50.8656L0.213996 41.7642L35.6606 0.254675Z" fill="#2CA4B5" />
+            </svg>
+            <svg class="small" xmlns="http://www.w3.org/2000/svg" width="31" height="38" viewBox="0 0 31 38"
+              fill="none">
+              <path d="M0.388577 37.121L14.2029 0.232107L30.8504 12.1469L0.388577 37.121Z" fill="#2CA4B5" />
+            </svg></span>
+        </div>
+      </div>
+    </div>
+    <div class="parent-col2">
+      <div class="col2">
+        <form class="loginOwnerform" action="#" method="post">
+          <input type="text" name="email" id="e" class="pad e-text" placeholder="Email" autocomplete="off">
+          <div class="password-con"><input type="password" id="pass" name="password" id="p" class="p-text" placeholder="Password" autocomplete="off">
+          <img id="ey" src="closeEye.png" alt="Eye Icon"  onclick="togglePasswordMess()"></div>
+
+          <div class="parent-mid">
+            <div class="parent-check"><input type="checkbox" name="check" id="c">
+              <label for="c" class="chk"></label>
+              <span>Remember Me</span> </div>
+            <div class="forgot">Forget Password?</div>
+          </div>
+          <button class="pad log-text" type="submit">Log in</button>
+          <div class="Parent-not"><span>Don't have any EasyPg account? </span><a class="under" href="signupMessOwner">Sign UP</a></div>
+          <div class="parent-google"><img src="google.png" alt="">
+            <div class="logGoogle-text">Log in with Google</div>
+          </div>
+        </form>
+
+
+      </div>
+      <div class="parent-copy"><div class="parent-com"><span class="copyright"> copyright 2024 - All Right Reserved by </span> <span
+          class="company"> Easypg.pv.ltd</span></div></div>
+    </div>
+    <div class="col3">
+      <div class="logo-title">
+        <div class="parent-name-business">
+          <div class="name"><span class="font one">Easy</span><span class="font two">Pg</span></div>
+          <div class="font col3-business">Business</div>
+        </div>
+
+      </div>
+      <div class="parent-lower">
+        <div class="grow-with-us-margin"></div>
+        <div class="grow-business-parent">
+          <div class="size ">Grow</div>
+          <div class="size ">Your</div>
+          <div class="size ">Business</div>
+          <div class="size ">With Us</div>
+
+        </div>
+        <div class="parent-col-3">
+          <div class="lower-col1 height-col"></div>
+          <div class="lower-col2 height-col"></div>
+          <div class="lower-col3 height-col"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+       function togglePasswordMess() {
+    var passwordField = document.getElementById("pass");
+    var eyeIcon = document.getElementById("ey");
+
+    if (passwordField.type === "password") {
+      passwordField.type = "text";
+      eyeIcon.src = "openEye.png"; // Replace with the path to your open eye icon
+    } else {
+      passwordField.type = "password";
+      eyeIcon.src = "closeEye.png"; // Replace with the path to your closed eye icon
+    }
+  }
+  </script>
+</body>
+
+</html>

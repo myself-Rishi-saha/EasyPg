@@ -168,6 +168,7 @@ body {
 .signupGoogle {
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 80%;
     height: 45px;
     flex-shrink: 0;
@@ -185,17 +186,17 @@ body {
 }
 .googleimg{
     height:55%;
-    margin-left: 27px;
+    /* margin-left: 27px; */
   
 }
 .signupwithgoogleText{
     color: rgba(0, 0, 0, 0.54);
-font-family: Montserrat;
-font-size: 17px;
-font-style: normal;
-width: 100%;
-
-line-height: normal;
+    font-family: Montserrat;
+    font-size: 17px;
+    font-style: normal;
+    /* width: 100%; */
+    line-height: normal;
+    margin-left: 10px;
 
 }
 .findNearestMess{

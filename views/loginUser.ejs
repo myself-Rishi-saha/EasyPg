@@ -12,19 +12,19 @@
 <body id="container">
     <div class="main">
         <div class="content">
-            <div class="loginTitle">Log in</div>
+           <div style="position: absolute;"> <div class="loginTitle">Log in</div>
             <div class="welcome">
                 <div class="upper">Welcome to</div> <span class="lower1">Easy</span><span class="lower2">Pg</span>
-            </div>
+            </div></div>
             <form class="formC" action="" method="post">
                 <div class="parentforum">
                     <div class="mainforum">
-                        <input class="emailText" type="text" placeholder="Email">
+                        <input class="emailText" type="text" name="email" placeholder="Email" autocomplete="off">
                         <div class="password-container">
-                            <input type="password" id="password" class="passwordText" placeholder="Password">
-                            <div class="eye-icon" onclick="togglePassword()">
-                              <img id="eye" src="closeEye.png" alt="Eye Icon">
-                            </div>
+                            <input type="password" id="password" name="password" class="passwordText"  placeholder="Password" autocomplete="off">
+                          
+                              <img id="eye" src="closeEye.png" alt="Eye Icon"  onclick="togglePassword()">
+                            
                           </div>
                         <button class="loginSubmit" type="submit">Log in</button>
                         <br>
@@ -36,7 +36,7 @@
                             </div>
                         </div>
                         <br>
-                       <div class="parentnotAccount"> <div class="notAccount">Don't have any EasyPg account?<a class="whoareyou" id="signupLink" href="./provider"> Sign Up</a> </div></div>
+                       <div class="parentnotAccount"> <div class="notAccount">Don't have any EasyPg account?<a class="whoareyou" id="signupLink" href="./signupUser"> Sign Up</a> </div></div>
                        <!-- <div class="popup" id="signupPopup">
                         <div class="popup-content">
                           <span class="close" onclick="closePopup()">&times;</span>
@@ -55,11 +55,19 @@
 
     </div>
     <div class="findNearestMess">
-        <div class="col1"></div>
+     <div class="parent-img">
+      <img class="ellipse" src="Ellipse.png" alt="" srcset="">
+     </div>
+      <div class="parent-elipse">
+        <div class="FindyourNearestMess">Find your 
+          Nearest Mess</div>
+          
+      </div>
+        <div class="parent-column">
+          <div class="col1"></div>
         <div class="col2"></div>
-        <div class="col3"></div>
-        <img class="ellipse" src="Ellipse.png" alt="" srcset="">
-        <div class="FindyourNearestMess">Find your Nearest Mess</div>
+        <div class="col3"></div></div>
+       
     </div>
     </div>
 

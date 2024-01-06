@@ -23,5 +23,9 @@ router.get('/provider', (req,res)=>{
       res.render("provider-seeker-page")
 
 });
+router.get('/loginMessOwner', (req,res)=>{
+
+      res.render("loginOwner")
+})
 
 module.exports=router;

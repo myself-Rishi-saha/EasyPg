@@ -26,6 +26,10 @@ router.get('/provider', (req,res)=>{
 router.get('/loginMessOwner', (req,res)=>{
 
       res.render("loginOwner")
+});
+router.get('/landing-page', (req,res)=>{
+
+      res.render("landing-messOwner")
 })
 
 module.exports=router;
